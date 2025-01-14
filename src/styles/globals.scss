@@ -20,7 +20,7 @@ body {
 body {
   background-color: var(--background);
   color: var(--text);
-  transition: background-color 0.3s, color 0.3s;
+  transition: background-color 0.5s, color 0.5s;
   font-family: var(--font-inter);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -76,4 +76,8 @@ h5 {
 a {
   color: inherit;
   text-decoration: none;
+
+  &:hover {
+    transform: scale(1.1);
+  }
 }
