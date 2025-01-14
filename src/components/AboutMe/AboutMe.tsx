@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 const AboutMe = () => {
   return (
-    <div className={styles.aboutMe} id="about-me">
+    <section className={styles.aboutMe} id="about-me">
       <div className={styles.main}>
         <h2>Hi, I'm Haley!</h2>
         <div className={styles.description}>
@@ -29,8 +29,8 @@ const AboutMe = () => {
         <h3>Let's get in touch...</h3>
         <h5><a href="mailto:haleyalee@gmail.com">haleyalee@gmail.com</a></h5>
       </div>
-    </div>
+    </section>
   )
 }
 
-export default AboutMe
+export default AboutMe;

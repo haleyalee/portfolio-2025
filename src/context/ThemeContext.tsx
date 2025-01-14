@@ -26,9 +26,7 @@ export const ThemeProvider: React.FC<{ children: ReactNode }> = ({ children }) =
 
   useEffect(() => {
     document.documentElement.setAttribute('data-theme', theme);
-    console.log('Theme applied:', document.documentElement.getAttribute('data-theme')); // Debugging
     localStorage.setItem('theme', theme);
-    console.log("new theme: ", theme);
   }, [theme]);
 
   const toggleTheme = () => {

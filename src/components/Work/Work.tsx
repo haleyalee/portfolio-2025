@@ -37,7 +37,7 @@ const myWork = [
 
 const Work = () => {
   return (
-    <div className={styles.work} id="work">
+    <section className={styles.work} id="work">
       {myWork.map((proj, i) => 
         <ProjectCard 
           key={i} 
@@ -47,8 +47,8 @@ const Work = () => {
           url={proj.url}
         />
       )}
-    </div>
+    </section>
   )
 }
 
-export default Work
+export default Work;
