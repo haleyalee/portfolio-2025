@@ -1,0 +1,26 @@
+.sidebar {
+
+  position: absolute;
+  // TODO: FIX THIS SHIT~!
+  top: 44%;
+  left: -465px;
+  height: 100px;
+  width: 100vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  transform: rotate(270deg);
+  z-index: 100;
+
+  .other {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .socials {
+    display: flex;
+    gap: 1rem;
+  }
+}

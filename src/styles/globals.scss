@@ -1,0 +1,86 @@
+$white: #FFFAFA;
+$black: #20292A;
+
+:root {
+  --background: $white;
+  --foreground: $black;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: $black;
+    --foreground: $white;
+  }
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: var(--font-inter);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  padding: 0 4rem;
+  position: relative;
+  display: flex;
+  font-weight: 300;
+  font-size: 1rem;
+}
+
+main {
+  margin-left: 400px;
+  padding-bottom: 4rem;
+}
+
+h1 {
+  font-family: var(--font-instrument-serif);
+  font-size: 4rem;
+  font-style: italic;
+  font-weight: 200;
+}
+
+h2 {
+  font-weight: 200;
+  font-size: 2rem;
+}
+
+h3 {
+  font-family: var(--font-instrument-serif);
+  font-size: 2.5rem;
+  font-style: italic;
+  font-weight: 200;
+}
+
+h4 {
+  font-family: var(--font-instrument-serif);
+  font-size: 1.5rem;
+  font-weight: 200;
+}
+
+h5 {
+  font-size: 1.5rem;
+  font-weight: 200;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+// @media (prefers-color-scheme: dark) {
+//   html {
+//     color-scheme: dark;
+//   }
+// }
