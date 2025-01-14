@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from "./SideBar.module.scss";
 import Link from 'next/link';
-import SunIcon from '@/components/Icons/SunIcon';
+import ThemeToggleBtn from '@/components/ThemeToggleBtn/ThemeToggleBtn';
 
 const SideBar = () => {
   return (
@@ -9,7 +9,7 @@ const SideBar = () => {
       <div className={styles.other}>
         <span>©2025</span>
         <div>
-          <SunIcon />
+          <ThemeToggleBtn />
         </div>
       </div>
       <div className={styles.socials}>

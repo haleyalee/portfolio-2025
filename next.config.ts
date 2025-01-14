@@ -1,9 +1,10 @@
 import type { NextConfig } from "next";
+import path from 'path';
 
 const nextConfig: NextConfig = {
   /* config options here */
   sassOptions: {
-    additionalData: `$var: red;`,
+    includePaths: [path.join(__dirname, 'styles')],
   },
 };
 

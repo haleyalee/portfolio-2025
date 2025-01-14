@@ -2,15 +2,13 @@ $white: #FFFAFA;
 $black: #20292A;
 
 :root {
-  --background: $white;
-  --foreground: $black;
+  --background: #{$white};
+  --text: #{$black};
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: $black;
-    --foreground: $white;
-  }
+[data-theme='dark'] {
+  --background: #{$black};
+  --text: #{$white};
 }
 
 html,
@@ -20,8 +18,9 @@ body {
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
+  background-color: var(--background);
+  color: var(--text);
+  transition: background-color 0.3s, color 0.3s;
   font-family: var(--font-inter);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -78,9 +77,3 @@ a {
   color: inherit;
   text-decoration: none;
 }
-
-// @media (prefers-color-scheme: dark) {
-//   html {
-//     color-scheme: dark;
-//   }
-// }

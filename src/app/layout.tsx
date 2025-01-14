@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter, Instrument_Serif } from "next/font/google";
 import "@/styles/globals.scss";
 import Header from "@/components/Header/Header";
+import { ThemeProvider } from "@/context/ThemeContext";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -29,10 +30,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${instrumentSerif.variable} ${inter.variable}`}>
-        <Header />
-        <main>
-          {children}
-        </main>
+        <ThemeProvider>
+          <Header />
+          <main>
+            {children}
+          </main>
+        </ThemeProvider>
       </body>
     </html>
   );
