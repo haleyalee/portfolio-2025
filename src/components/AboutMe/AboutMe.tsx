@@ -20,7 +20,7 @@ const AboutMe = () => {
           </div>
         </div>
         <div className={styles.resume}>
-          <Link href="https://docs.google.com/document/d/10E9dnxa2-JrBEP41xMyk0vtkEZWe7ox7AO4bz8HK1OY/edit?usp=sharing">
+          <Link href="https://docs.google.com/document/d/10E9dnxa2-JrBEP41xMyk0vtkEZWe7ox7AO4bz8HK1OY/edit?usp=sharing" target="_blank">
             <h4>My Resume</h4>
           </Link>
         </div>
