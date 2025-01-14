@@ -15,7 +15,7 @@ const NavBar = () => {
         <Link href="#about-me">About Me</Link>
       </div>
       <div>
-        <Link href="#">Resume</Link>
+        <Link href="https://docs.google.com/document/d/10E9dnxa2-JrBEP41xMyk0vtkEZWe7ox7AO4bz8HK1OY/edit?usp=sharing">Resume</Link>
       </div>
     </div>
   )

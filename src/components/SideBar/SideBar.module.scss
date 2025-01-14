@@ -10,17 +10,17 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem;
+  padding: 1rem 1.5rem;
   transform: rotate(270deg);
   z-index: 100;
 
   .other {
     display: flex;
-    gap: 1rem;
+    gap: 1.5rem;
   }
 
   .socials {
     display: flex;
-    gap: 1rem;
+    gap: 1.5rem;
   }
 }

@@ -20,14 +20,14 @@ const AboutMe = () => {
           </div>
         </div>
         <div className={styles.resume}>
-          <Link href="">
+          <Link href="https://docs.google.com/document/d/10E9dnxa2-JrBEP41xMyk0vtkEZWe7ox7AO4bz8HK1OY/edit?usp=sharing">
             <h4>My Resume</h4>
           </Link>
         </div>
       </div>
       <div className={styles.contact}>
         <h3>Let's get in touch...</h3>
-        <h5><a href="email:haleyalee@gmail.com">haleyalee@gmail.com</a></h5>
+        <h5><a href="mailto:haleyalee@gmail.com">haleyalee@gmail.com</a></h5>
       </div>
     </div>
   )
