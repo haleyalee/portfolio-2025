@@ -17,7 +17,7 @@ const ThemeToggleBtn = () => {
     // Remove the spinning class after the animation completes
     setTimeout(() => {
       setIsSpinning(false);
-    }, 1000); 
+    }, 500); 
   };
 
   return (

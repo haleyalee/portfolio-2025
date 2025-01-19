@@ -1,4 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
+
+"use client";
+
 import React from 'react';
 import styles from "./AboutMe.module.scss";
 import Link from 'next/link';

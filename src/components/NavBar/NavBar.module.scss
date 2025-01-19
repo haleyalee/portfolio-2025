@@ -12,4 +12,8 @@
   .active {
     font-style: italic;
   }
+
+  & :hover {
+    text-decoration: underline;
+  }
 }

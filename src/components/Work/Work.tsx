@@ -1,4 +1,7 @@
-import React from 'react';
+"use client";
+
+import React, { useRef } from 'react';
+import * as motion from "motion/react-client";
 import styles from "./Work.module.scss";
 import ProjectCard from '@/components/ProjectCard/ProjectCard';
 
@@ -33,19 +36,29 @@ const myWork = [
     techStack: ["HTML/CSS", "JavaScript"],
     url: ""
   },
-]
+];
 
 const Work = () => {
+  const scrollRef = useRef(null);
+
   return (
-    <section className={styles.work} id="work">
+    <section className={styles.work} id="work" ref={scrollRef} >
       {myWork.map((proj, i) => 
-        <ProjectCard 
+        <motion.div
           key={i} 
-          title={proj.title}
-          description={proj.description}
-          techStack={proj.techStack}
-          url={proj.url}
-        />
+          className="box"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ root: scrollRef }}
+          layout
+        >
+          <ProjectCard 
+            title={proj.title}
+            description={proj.description}
+            techStack={proj.techStack}
+            url={proj.url}
+          />
+        </motion.div>
       )}
     </section>
   )

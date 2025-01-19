@@ -8,9 +8,7 @@ const SideBar = () => {
     <div className={styles.sidebar}>
       <div className={styles.other}>
         <span>©2025</span>
-        <div>
-          <ThemeToggleBtn />
-        </div>
+        <ThemeToggleBtn />
       </div>
       <div className={styles.socials}>
         <Link href="https://www.linkedin.com/in/haleyalee">LI</Link>

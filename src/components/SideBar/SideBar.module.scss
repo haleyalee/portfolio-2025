@@ -1,22 +1,20 @@
 .sidebar {
-
-  position: absolute;
-  // TODO: FIX THIS SHIT~!
-  top: 44%;
-  left: -465px;
-  height: 100px;
-  width: 100vh;
+  position: fixed;
+  left: 0%;
+  top: 103%; /* Position the rotation pivot in the middle vertically */
+  transform: translateY(-50%) rotate(-90deg); /* Center and rotate */
+  transform-origin: left top; /* Rotate around the left edge */
+  width: 100vh; /* Full width of the viewport after rotation */
+  height: auto;
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  flex-direction: row; 
   justify-content: space-between;
-  padding: 1rem 1.5rem 0 1.5rem;
-  transform: rotate(270deg);
+  align-items: center;
+  padding: 1rem;
 
   .other {
     display: flex;
     align-items: center;
-    justify-content: center;
     gap: 1.5rem;
   }
 
