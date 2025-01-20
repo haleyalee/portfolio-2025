@@ -3,7 +3,7 @@
 .sidebar {
   position: fixed;
   left: 0%;
-  top: 103%; /* Position the rotation pivot in the middle vertically */
+  top: 103.5%; /* Position the rotation pivot in the middle vertically */
   transform: translateY(-50%) rotate(-90deg); /* Center and rotate */
   transform-origin: left top; /* Rotate around the left edge */
   width: 100vh; /* Full width of the viewport after rotation */
