@@ -1,3 +1,5 @@
+@use "./breakpoints";
+
 $white: #FFFAFA;
 $black: #001219;
 
@@ -29,13 +31,34 @@ body {
   padding: 0 4rem;
   position: relative;
   display: flex;
+  flex-direction: row;
   font-weight: 300;
   font-size: 1rem;
+
+  @include breakpoints.respond(md) {
+    flex-direction: column;
+  }
+
+  @include breakpoints.respond(sm) {
+    padding: 0 2rem;
+  }
 }
 
 main {
-  margin-left: 400px;
+  margin-left: 375px;
   padding-bottom: 4rem;
+
+  @include breakpoints.respond(md) {
+    margin-left: 0;
+  }
+}
+
+.hidden {
+  visibility: hidden;
+
+  @include breakpoints.respond(md) {
+    visibility: visible;
+  }
 }
 
 h1 {

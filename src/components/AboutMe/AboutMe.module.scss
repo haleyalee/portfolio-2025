@@ -1,9 +1,16 @@
+@use "@/styles/breakpoints";
+
 .aboutMe {
-  margin-top: 8rem;
-  height: 80vh;
+  padding-top: 8rem;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  @include breakpoints.respond(md) {
+    padding: 4rem 0;
+    height: auto;
+  }
 
   .main {
     margin-top: 10rem;
@@ -23,13 +30,31 @@
     .resume {
       display: flex;
       justify-content: center;
-      margin-top: 3rem;
+      margin-top: 6rem;
     }
   }
 
   .contact {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    margin-top: 6rem;
+    padding-bottom: 3rem;
+
+    @include breakpoints.respond(md) {
+      flex-direction: column;
+      justify-content: center;
+      gap: 1rem;
+    }
+
+    @include breakpoints.respond(sm) {
+      h3 {
+        font-size: 1.5rem;
+      }
+      h5 {
+        font-size: 1rem;
+      }
+    }
   }
 }

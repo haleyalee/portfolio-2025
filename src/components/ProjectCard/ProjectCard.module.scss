@@ -1,3 +1,5 @@
+@use "@/styles/breakpoints";
+
 .card {
   position: relative;
   overflow: hidden;
@@ -9,6 +11,22 @@
   justify-content: center;
   text-align: center;
   transition: transform 0.5s ease;
+
+  @include breakpoints.respond(lg) {
+    min-height: 400px;
+  }
+
+  @include breakpoints.respond(md) {
+    min-height: 375px;
+  }
+
+  @include breakpoints.respond(sm) {
+    min-height: 300px;
+  }
+
+  @include breakpoints.respond(xs) {
+    min-height: 250px;
+  }
 
   .image {
     position: absolute;
@@ -35,7 +53,18 @@
     gap: 1rem;
     text-align: center;
     transition: opacity 0.5s ease, visibility 0.5s ease;
-    z-index: 2; 
+    z-index: 2;
+    
+    @include breakpoints.respond(sm) {
+      padding: 1rem;
+      font-size: 0.85rem;
+      h3 {
+        font-size: 1.5rem;
+      }
+      h5 {
+        font-size: 1rem;
+      }
+    }
   }
 
   &:hover {

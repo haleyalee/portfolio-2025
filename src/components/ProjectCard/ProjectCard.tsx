@@ -42,8 +42,8 @@ const ProjectCard = ({
           )}
         </div>
         <div className={styles.urls}>
-          { url && <a href={url}><ExternalIcon /></a>}
-          { github && <a href={github}><GithubIcon /></a>}
+          { url && <a href={url} target="_blank"><ExternalIcon /></a>}
+          { github && <a href={github} target="_blank"><GithubIcon /></a>}
         </div>
       </div>
     </div>

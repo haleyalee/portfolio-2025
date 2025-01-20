@@ -3,6 +3,7 @@ import { Inter, Instrument_Serif } from "next/font/google";
 import "@/styles/globals.scss";
 import Header from "@/components/Header/Header";
 import { ThemeProvider } from "@/context/ThemeContext";
+import SideBar from "@/components/SideBar/SideBar";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -35,6 +36,9 @@ export default function RootLayout({
           <main>
             {children}
           </main>
+          <div>
+            <SideBar />
+          </div>
         </ThemeProvider>
       </body>
     </html>

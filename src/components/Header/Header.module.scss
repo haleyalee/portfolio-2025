@@ -1,20 +1,37 @@
+@use "@/styles/breakpoints";
+
 .header {
   position: fixed;
+
+  @include breakpoints.respond(md) {
+    position: relative;
+    margin-top: 50px;
+  }
 
   .main {
     height: 100vh;
     width: 100%;
     display: flex;
     flex-direction: column;
-    // align-items: center;
     justify-content: center;
     gap: 1rem;
-    // padding: 1rem;
-  }
 
-  // h1 {
-  //   font-family: var(--font-instrument-serif);
-  //   font-size: 4rem;
-  //   font-style: italic;
-  // }
+    @include breakpoints.respond(lg) {
+      h1 {
+        font-size: 4rem;
+      }
+    }
+
+    @include breakpoints.respond(md) {
+      height: auto;
+      padding: 4rem 0;
+      border-bottom: 1px solid;
+    }
+
+    @include breakpoints.respond(sm) {
+      h1 {
+        font-size: 4.5rem;
+      }
+    }
+  }
 }

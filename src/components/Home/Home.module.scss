@@ -1,8 +1,15 @@
+@use "@/styles/breakpoints";
+
 .home {
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+  @include breakpoints.respond(md) {
+    height: 60vh;
+    padding: 4rem 0;
+  }
   
   .typewriter {
     display: flex;
