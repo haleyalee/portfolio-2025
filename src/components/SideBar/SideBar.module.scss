@@ -13,9 +13,9 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
-  background-color: var(--background);
-
+  
   @include breakpoints.respond(md) {
+    background-color: var(--background);
     font-size: 0.85rem;
     transform: none;
     left: 0;
@@ -23,7 +23,7 @@
     width: 100vw;
     z-index: 10;
   }
-
+  
   .other {
     display: flex;
     align-items: center;

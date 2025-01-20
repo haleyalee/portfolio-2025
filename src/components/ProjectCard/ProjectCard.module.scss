@@ -27,7 +27,7 @@
   @include breakpoints.respond(xs) {
     min-height: 250px;
   }
-
+  
   .image {
     position: absolute;
     width: 100%;
@@ -87,7 +87,9 @@
   .techStack {
     display: flex;
     justify-content: center;
-    gap: 1rem;
+    flex-wrap: wrap;
+    row-gap: 0.25rem;
+    column-gap: 1rem;
   }
 
   .urls {
