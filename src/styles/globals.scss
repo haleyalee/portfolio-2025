@@ -53,14 +53,6 @@ main {
   }
 }
 
-.hidden {
-  visibility: hidden;
-
-  @include breakpoints.respond(md) {
-    visibility: visible;
-  }
-}
-
 h1 {
   font-family: var(--font-instrument-serif);
   font-size: 5rem;
